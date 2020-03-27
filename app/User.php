@@ -1,4 +1,9 @@
 <?php
+/**
+ * Copyright (c) 2020.
+ * [Alvaro Lucas Castillo Calabacero]
+ * Contact alvarolucascc96@gmail.com
+ */
 
 namespace App;
 
@@ -16,7 +21,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'user', 'email', 'password',
     ];
 
     /**
