@@ -19,4 +19,6 @@ class ConversationReply extends Model
     protected $fillable = [
         'reply','user_id_fk', 'ip', 'time','conversation_id_fk','latitude','longitude',
     ];
+
+    protected $guarded = [];
 }
