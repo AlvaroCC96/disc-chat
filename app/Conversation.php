@@ -22,4 +22,12 @@ class Conversation extends Model
     ];
 
     protected $guarded = [];
+
+    public function userOne() {
+        return $this->hasOne('App\User','id','user_one_fk');
+    }
+
+    public function userTwo() {
+        return $this->hasOne('App\User','id','user_two_fk');
+    }
 }

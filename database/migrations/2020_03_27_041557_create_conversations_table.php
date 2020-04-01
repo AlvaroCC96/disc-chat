@@ -20,15 +20,21 @@ class CreateConversationsTable extends Migration
     {
         Schema::create('conversations', function (Blueprint $table) {
             $table->id();
-            $table->integer("user_one");
-            $table->integer("user_two");
-            $table->string('ip');
-            $table->integer("time");
+            $table->integer("user_one_fk");
+            $table->integer("user_two_fk");
+            $table->text("reply");
 
-            $table->foreign("user_one")->references("id")->on("users");
-            $table->foreign("user_two")->references("id")->on("users");
+            $table->DateTime("time"); // como int ? o como string y la parseamos a Date en la APP?
+
+            $table->float("latitude");
+            $table->float("longitude");
 
             $table->timestamps();
+
+            $table->foreign("user_one_fk")->references("id")->on("users");
+            $table->foreign("user_two_fk")->references("id")->on("users");
+
+
         });
     }
 

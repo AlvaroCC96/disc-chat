@@ -1,4 +1,9 @@
 <?php
+/**
+ * Copyright (c) 2020.
+ * [Alvaro Lucas Castillo Calabacero]
+ * Contact alvarolucascc96@gmail.com
+ */
 
 return [
 
@@ -165,7 +170,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+        Laravel\Passport\PassportServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -174,6 +179,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
 
     ],
 

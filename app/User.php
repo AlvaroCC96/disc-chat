@@ -42,4 +42,14 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
     protected $guarded = [];
+
+    /**
+     * Relation 1 a n user-conversations
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function conversations()
+    {
+        return $this->hasMany('App\Conversation','user_one_fk');
+
+    }
 }
