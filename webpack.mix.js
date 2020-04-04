@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2020.
+ * [Alvaro Lucas Castillo Calabacero]
+ * Contact alvarolucascc96@gmail.com
+ */
+
 const mix = require('laravel-mix');
 
 /*
@@ -12,4 +18,4 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+   .sass('resources/sass/app.scss', 'public/css');

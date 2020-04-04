@@ -19,8 +19,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::resource('conversations','ConversationsController');
-Route::resource('conversationsReply','ConversationsReplyController');
+Route::resource('conversations','ConversationController');
+Route::get('registerUser', function (Request $request){
+    return (new App\Http\Controllers\Auth\RegisterController)->register($request);
+});
 
 //lo de abajo lo comente
 //Route::middleware('auth:api')->get('/user', function (Request $request) {
