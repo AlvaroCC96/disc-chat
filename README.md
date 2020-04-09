@@ -22,8 +22,8 @@ To see the source code, access the following repository:
 
 ## Author ✒️
 
- **Alvaro Castillo Calabacero** - alvarolucascc96@gmail.com
- **Ignacio Fuenzalida Veas** - ignacio.fuenzalida@alumnos.ucn.cl
+- **Alvaro Castillo Calabacero** - alvarolucascc96@gmail.com
+- **Ignacio Fuenzalida Veas** - ignacio.fuenzalida@alumnos.ucn.cl
 
 
 ## License 📄
