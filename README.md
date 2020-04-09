@@ -27,5 +27,5 @@ To see the source code, access the following repository:
 
 ## License 📄
 
-This project is under license (Tu Licencia) - [LICENSE.md]
+This project is under license (APACHE 2.0) - [LICENSE.md]
 
