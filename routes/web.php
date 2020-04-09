@@ -21,13 +21,16 @@ Route::post('conversation','ConversationController@create');   //for creating co
 Route::get('conversation/{id}','ConversationController@update'); //for updating conversation
 Route::post('conversation/{id}','ConversationController@delete');  // for deleting conversation
 Route::get('conversation','ConversationController@index'); // for retrieving conversation
-Route::get('conversation/{idUser}','ConversationController@listConversations');
 Route::get('/', function () {
     return view('welcome');
 });
 
 Route::get('registerUser', function (Request $request){
     return (new App\Http\Controllers\UserController)->registerUser($request);
+});
+
+Route::get('conversations', function (Request $request){
+    return (new App\Http\Controllers\ConversationController)->listConversations($request);
 });
 
 Route::get('login', function (Request $request){

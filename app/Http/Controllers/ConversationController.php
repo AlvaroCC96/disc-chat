@@ -50,10 +50,16 @@ class ConversationController extends Controller
 
         return response()->json($response);
     }
-    public function listConversations($idUser){
-        $conversation  = DB::table('conversations')->where('user_one_fk',$idUser)->get();
+    public function listConversations($request){
+        $idUser = $request::input('user_one');
+        $idUser2 = $request::input('user_two');
+        $date = $request::input('time'); // time of last message
+        $conversation  = DB::table('conversations')->where('user_one_fk',$idUser)
+                        ->where('user_two_fk',$idUser2)
+                        ->where('created_at',$date,'<')->get();
         $response["conversations"] = $conversation;
         $response["success"] = 1;
         return response()->json($response);
     }
+
 }
