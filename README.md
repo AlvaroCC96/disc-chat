@@ -4,6 +4,7 @@ _Server that provides a RESTFUL API service, for the project **ChatDisc** of the
 
 ## Database Model 
 
+(https://github.com/AlvaroCC96/disc-chat/tree/master/resources/img/database.png)
 
 ## Start 🚀
 
